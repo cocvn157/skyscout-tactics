@@ -1,0 +1,26 @@
+# Dependencies & build output
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# Environment & secrets
+.env
+.env.*
+!.env.example
+
+# Demo media & temporary artifacts (never commit binary videos or frame captures)
+demo/*.mp4
+demo/*.webm
+demo/*.mov
+demo/*.png
+demo/*.jpg
+*.log
+.DS_Store
+Thumbs.db
+
+# JetBrains user-specific runtime state (keep shared project XML/IML tracked!)
+.idea/workspace.xml
+.idea/usage.statistics.xml
+.idea/shelf/
+.idea/httpRequests/

@@ -351,24 +351,24 @@ function buildRoundFromSpec(map: MapId, spec: RoundBlueprintSpec): RoundTelemetr
           endPos = clampPos(anchors.flankPoint.x, anchors.flankPoint.y + 6);
         } else if (idx === 0 || idx === 1) {
           endPos = clampPos(
-            anchors.siteCenter.x + (idx === 0 ? -3 : 4),
-            anchors.siteCenter.y + (idx === 0 ? 3 : -2),
+            anchors.siteCenter.x + (idx === 0 ? -6.5 : 6.5),
+            anchors.siteCenter.y + (idx === 0 ? 4.5 : -3.5),
           );
         } else {
           endPos = clampPos(
-            anchors.choke.x + (idx - 2.5) * 4,
-            anchors.choke.y - 9 + idx * 1.5,
+            anchors.choke.x + (idx - 3) * 6.5,
+            anchors.choke.y - 7 + (idx - 2) * 4.5,
           );
         }
       } else {
         if (idx === 4) {
-          endPos = clampPos(anchors.siteCenter.x + 4, anchors.siteCenter.y - 6);
+          endPos = clampPos(anchors.siteCenter.x + 6.5, anchors.siteCenter.y - 7.5);
         } else if (idx === 3) {
-          endPos = clampPos(anchors.smokePoint.x, anchors.smokePoint.y + 3);
+          endPos = clampPos(anchors.smokePoint.x - 4, anchors.smokePoint.y + 4.5);
         } else {
           endPos = clampPos(
-            anchors.siteCenter.x + (idx - 1) * 6,
-            anchors.siteCenter.y - 3,
+            anchors.siteCenter.x + (idx - 1) * 7.5,
+            anchors.siteCenter.y - 5.5 + idx * 2,
           );
         }
       }
@@ -603,10 +603,10 @@ const ASCENT_SPECS: RoundBlueprintSpec[] = [
   { roundNumber: 3, attackTeam: 'OPP', winner: 'C9', outcomeReason: 'elimination', attackBuyType: 'full-buy', defenseBuyType: 'full-buy', attackTeamBank: 22100, defenseTeamBank: 20400, targetSite: 'B', executeSec: 59, plantSec: null, oppSetupTag: 'Late B-Market Default', firstBloodTeam: 'C9', fbAtSec: 48, weapon: 'Vandal' },
   { roundNumber: 4, attackTeam: 'OPP', winner: 'C9', outcomeReason: 'spike-defused', attackBuyType: 'full-buy', defenseBuyType: 'full-buy', attackTeamBank: 21500, defenseTeamBank: 23200, targetSite: 'B', executeSec: 64, plantSec: 71, oppSetupTag: 'Late B-Market + Cat Lurk', firstBloodTeam: 'C9', fbAtSec: 59, weapon: 'Vandal' },
   { roundNumber: 5, attackTeam: 'OPP', winner: 'C9', outcomeReason: 'elimination', attackBuyType: 'eco', defenseBuyType: 'full-buy', attackTeamBank: 9200, defenseTeamBank: 24900, targetSite: 'A', executeSec: 22, plantSec: null, oppSetupTag: 'Eco A-Main Stack Rush', firstBloodTeam: 'C9', fbAtSec: 17, weapon: 'Phantom' },
-  { roundNumber: 6, attackTeam: 'OPP', winner: 'OPP', outcomeReason: 'spike-detonated', attackBuyType: 'full-buy', defenseBuyType: 'full-buy', attackTeamBank: 22400, defenseTeamBank: 25600, targetSite: 'B', executeSec: 63, plantSec: 70, oppSetupTag: 'Late B-Market Split', firstBloodTeam: 'OPP', fbAtSec: 58, weapon: 'Vandal' },
+  { roundNumber: 6, attackTeam: 'OPP', winner: 'OPP', outcomeReason: 'spike-detonated', attackBuyType: 'full-buy', defenseBuyType: 'full-buy', attackTeamBank: 22400, defenseTeamBank: 25600, targetSite: 'B', executeSec: 63, plantSec: 70, oppSetupTag: 'Late B-Market Split', firstBloodTeam: 'C9', fbAtSec: 56, weapon: 'Vandal' },
   { roundNumber: 7, attackTeam: 'OPP', winner: 'C9', outcomeReason: 'elimination', attackBuyType: 'full-buy', defenseBuyType: 'full-buy', attackTeamBank: 24200, defenseTeamBank: 21800, targetSite: 'A', executeSec: 57, plantSec: 66, oppSetupTag: 'Late A-Tree Split', firstBloodTeam: 'C9', fbAtSec: 52, weapon: 'Vandal' },
   { roundNumber: 8, attackTeam: 'OPP', winner: 'C9', outcomeReason: 'elimination', attackBuyType: 'force', defenseBuyType: 'full-buy', attackTeamBank: 14800, defenseTeamBank: 24400, targetSite: 'A', executeSec: 24, plantSec: null, oppSetupTag: 'Force A-Main Crunch', firstBloodTeam: 'C9', fbAtSec: 19, weapon: 'Vandal' },
-  { roundNumber: 9, attackTeam: 'OPP', winner: 'OPP', outcomeReason: 'spike-detonated', attackBuyType: 'full-buy', defenseBuyType: 'full-buy', attackTeamBank: 21200, defenseTeamBank: 25100, targetSite: 'B', executeSec: 62, plantSec: 69, oppSetupTag: 'Late B-Main + Market Exec', firstBloodTeam: 'OPP', fbAtSec: 57, weapon: 'Vandal' },
+  { roundNumber: 9, attackTeam: 'OPP', winner: 'OPP', outcomeReason: 'spike-detonated', attackBuyType: 'full-buy', defenseBuyType: 'full-buy', attackTeamBank: 21200, defenseTeamBank: 25100, targetSite: 'B', executeSec: 62, plantSec: 69, oppSetupTag: 'Late B-Main + Market Exec', firstBloodTeam: 'C9', fbAtSec: 55, weapon: 'Vandal' },
   { roundNumber: 10, attackTeam: 'OPP', winner: 'OPP', outcomeReason: 'spike-detonated', attackBuyType: 'full-buy', defenseBuyType: 'full-buy', attackTeamBank: 24800, defenseTeamBank: 21400, targetSite: 'B', executeSec: 58, plantSec: 65, oppSetupTag: 'Late B-Market Pinch', firstBloodTeam: 'OPP', fbAtSec: 54, weapon: 'Phantom' },
   { roundNumber: 11, attackTeam: 'OPP', winner: 'C9', outcomeReason: 'elimination', attackBuyType: 'full-buy', defenseBuyType: 'half-buy', attackTeamBank: 26100, defenseTeamBank: 14200, targetSite: 'A', executeSec: 44, plantSec: null, oppSetupTag: 'Mid Catwalk Default', firstBloodTeam: 'C9', fbAtSec: 36, weapon: 'Sheriff' },
   { roundNumber: 12, attackTeam: 'OPP', winner: 'C9', outcomeReason: 'spike-defused', attackBuyType: 'full-buy', defenseBuyType: 'full-buy', attackTeamBank: 24500, defenseTeamBank: 22900, targetSite: 'B', executeSec: 60, plantSec: 68, oppSetupTag: 'Late B-Market Lurk Split', firstBloodTeam: 'OPP', fbAtSec: 55, weapon: 'Vandal' },

@@ -51,10 +51,10 @@ textarea {
   min-height: 100vh;
   max-width: 1420px;
   margin: 0 auto;
-  padding: 16px 20px 36px;
+  padding: 12px 18px 28px;
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 10px;
 }
 
 /* Header */
@@ -347,22 +347,22 @@ textarea {
 .round-strip {
   display: flex;
   flex-wrap: wrap;
-  gap: 6px;
+  gap: 5px;
 }
 
 .round-chip {
-  min-width: 44px;
-  padding: 5px 7px;
-  border-radius: 8px;
+  min-width: 41px;
+  padding: 4px 6px;
+  border-radius: 7px;
   border: 1px solid var(--border-subtle);
   background: var(--bg-elevated);
   color: var(--text-primary);
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2px;
+  gap: 1px;
   cursor: pointer;
-  font-size: 0.74rem;
+  font-size: 0.72rem;
   font-weight: 700;
   transition: transform 0.1s ease, border-color 0.12s ease;
 }

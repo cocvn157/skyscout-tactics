@@ -480,13 +480,13 @@ export function TacticalMapView({
                     {showLabels && (
                       <text
                         x={pos.x}
-                        y={pos.y - 2.7}
+                        y={pos.y - 2.6}
                         textAnchor="middle"
-                        fontSize="1.9"
+                        fontSize="1.65"
                         fontWeight="700"
                         fill={isC9 ? '#bae6fd' : '#fecdd3'}
                       >
-                        {p.name} ({p.agent.slice(0, 3)})
+                        {p.name}
                       </text>
                     )}
                   </g>
